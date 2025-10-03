@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Q1 Project</title>
+
+ <style>
+   body {
+    background-color: rgb(57, 21, 122);
+   }
+   
+    div {
+        color:rgb(57, 21, 122);
+        background-color: rgb(208, 133, 20);
+        font-size: 35px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    .footer {
+        background-color: rgb(208, 133, 20);
+        color: rgb(57, 21, 122);
+        font-size: 35px;
+    }
+    .header {
+        background-color: rgb(208, 133, 20);
+        color: rgb(57, 21, 122);
+        font-size: 35px;
+    }
+    .navbar {
+	padding: 0px;
+	margin: 0px;
+	background-color: rgb(208, 133, 20);
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(208, 133, 20);
+    }
+
+    ul li {
+    float: left;
+    }
+
+    ul li a {
+    display: block;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    }
+
+    ul li a:hover {
+    background-color:rgb(43, 15, 94);
+    }
+
+    form {
+    background-color: rgb(208, 133, 20);
+	  border-radius: 10px;
+	  padding: 40px ;
+	  margin: 0 auto;
+	  width: 500px;
+    text-align: center;
+    }
+    </style>
+
+</head>
+<body>
+
+
+  <div class="container-fluid">
+
+  	 <a class="navbar-brand" href="#">
+      <img src="https://pixelsafari.neocities.org/favicon/food/sweet/choc11.gif" alt="Avatar Logo" style="width:40px;" class="rounded-pill"><strong>🍫The Chocolate Palace🍫</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- NAVBARRRR -->
+                <div class="collapse navbar-collapse" id="mynavbar">
+
+ <div class="container mt-3">	
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Homepage</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#order">Order Now</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact Us</a>
+    </li>
+    </ul>
+</div>
+
+   	</div>
+  </div>
+</nav>
+<br />
+<br />
+
+
+<!-- menu -->
+
+<form>
+ <div class="container-mt-3">
+    <ul class="list-unstyled" id="product_names"></ul>
+        <ul class="list-unstyled" id="menu_prices">
+	    <div class="remember mb-3"> 
+	    	<h2><strong>Menu:</strong></h2>
+	        <div >
+	            <input type="checkbox" id="checkRemember">
+	            <label for="checkRemember">Hot Chocolate</label>
+				<br />
+				<hr>
+	            <input type="checkbox" id="checkRemember">
+	            <label for="checkRemember">Chocolate Cake</label>
+				<br />
+				<hr>
+	            <input type="checkbox" id="checkRemember">
+	            <label for="checkRemember">Chocolate Chip Cookies</label>
+				<br />
+				<hr>
+				      <input type="checkbox" id="checkRemember">
+	            <label for="checkRemember">Chocolate Milkshake</label>
+				<br />
+				<hr>
+				      <input type="checkbox" id="checkRemember">
+	            <label for="checkRemember">Waffles with Belgian Chocolate</label>
+				<br />
+				<hr>
+
+      <h2><strong>Customer Info:</strong></h2>
+
+      <div class="name mb-3"> 
+	        <a>Name:</a>
+	        <input type="text" class="form-control" id="inputName" placeholder="Enter your NAME:">
+	    </div>
+
+      <div class="name mb-3"> 
+	        <a>Address:</a>
+	        <input type="text" class="form-control" id="inputAddress" placeholder="Enter your ADDRESS:">
+	    </div>
+
+      <div class="name mb-3"> 
+	        <a>Contact Number:</a>
+	        <input type="number" class="form-control" id="inputNumber" placeholder="Enter your PHONE NUMBER:">
+	    </div>
+
+          <button type="button" id="output" py-click="order_form">Create Order</button>
+        <br />
+        <br />
+	        </div>
+	    </div>
+    </div>
+    </ul>
+    <hr />
+  </form>
+   
+    <py-script src="main.py"></py-script>
+
+    
+</body>
+</html>
